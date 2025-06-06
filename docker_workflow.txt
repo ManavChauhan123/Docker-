@@ -1,0 +1,13 @@
+Assure you are logged in : docker login
+
+Build Docker Images : docker build -t mlops-docker-demo
+
+Run The Container : docker run -p 5000:5000 mlops-docker-demo
+
+Tag your Images: docker tag mlops-docker-demo manavchauhan123/mlops-docker-demo:latest
+
+Push Images to dockehub: docker push manavchauhan123/mlops-docker-demo:latest
+
+Pull image from dockerhub : docker pull manavchauhan123/mlops-docker-demo:latest
+
+Run the pulled images : docker run -p 5000:5000  manavchauhan123/mlops-docker-demo:latest
